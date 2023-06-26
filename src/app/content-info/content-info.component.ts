@@ -1,17 +1,23 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {DomSanitizer, SafeResourceUrl, SafeUrl} from '@angular/platform-browser';
+import { constants } from '../constants';
 
 @Component({
   selector: 'app-content-info',
   templateUrl: './content-info.component.html',
   styleUrls: ['./content-info.component.scss']
 })
-export class ContentInfoComponent{
+export class ContentInfoComponent implements OnInit{
 
   constructor(private sanitizer: DomSanitizer){}
 
+  ngOnInit(): void {
+
+  }
+
   @Input() type: any;
 
+  constants = constants;
   carouselConfig = {
     slidesToShow: 3,
     slidesToScroll: 3,

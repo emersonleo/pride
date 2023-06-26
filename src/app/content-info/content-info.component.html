@@ -1,4 +1,4 @@
-<div *ngIf="type == 'TEXTO'" class="container-text">
+<div *ngIf="type == constants.TYPETOSELECT.TEXTO" class="container-text">
   <h3> Celebre a Diversidade na sua empresa! </h3>
 
   <p>
@@ -19,7 +19,7 @@
 
 </div>
 
-<div *ngIf="type == 'VIDEO'">
+<div *ngIf="type == constants.TYPETOSELECT.VIDEO">
   <div class="carousel container-slide">
     <ngx-slick-carousel class="carousel-items" [config]="carouselConfig">
       <div ngxSlickItem *ngFor="let video of videos" class="slide">

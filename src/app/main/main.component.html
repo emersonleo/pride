@@ -1,7 +1,7 @@
 <div class="transviver-box">
   <div class="transviver-text">
-    <p> Sabia que aqui em Recife temos uma ONG com ações focadas na comunidade LGBTQIA+ ?</p>
-    <p> Para conhecer o insta do Instituto Transviver é só clicar na casinha ;) </p>
+    <p> Sabia que aqui em Recife temos uma ONG com ações focadas na comunidade LGBTQIA+ ?
+      <br>Para conhecer o insta do Instituto Transviver é só clicar na casinha ;) </p>
     <a href="https://www.instagram.com/transviver/" target="_blank"> <mat-icon> home </mat-icon> </a>
   </div>
 </div>
@@ -26,8 +26,8 @@
       </div>
     </div>
     <div class="buttons-type">
-      <app-button-type [text]="typeToSelect.TEXTO" (selectedType) = "selectedType(typeToSelect.TEXTO)"> </app-button-type>
-      <app-button-type [text]="typeToSelect.VIDEO" (selectedType) = "selectedType(typeToSelect.VIDEO)"> </app-button-type>
+      <app-button-type [text]="constants.TYPETOSELECT.TEXTO" (selectedType) = "selectedType(constants.TYPETOSELECT.TEXTO)"> </app-button-type>
+      <app-button-type [text]="constants.TYPETOSELECT.VIDEO" (selectedType) = "selectedType(constants.TYPETOSELECT.VIDEO)"> </app-button-type>
     </div>
     <div>
       <app-content-info [type]="typeSelected"></app-content-info>

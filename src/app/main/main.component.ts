@@ -3,6 +3,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatButtonModule} from '@angular/material/button';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ModalInfoComponent } from '../modal-info/modal-info.component';
+import { constants } from '../constants';
 
 @Component({
   selector: 'app-main',
@@ -12,6 +13,7 @@ import { ModalInfoComponent } from '../modal-info/modal-info.component';
 
 export class MainComponent implements OnInit{
 
+  constants = constants;
   comunity: any = [
     { SIGLA: 'L', DESCRICAO: 'LÉSBICAS são mulheres que sentem atração sexual/romântica por pessoas do mesmo gênero (mulheres/feminino).', TITULO: 'LÉSBICAS' },
     { SIGLA: 'G', DESCRICAO: 'GAYS são homens que sentem atração sexual/romântica por pessoas do mesmo gênero (homens/masculino).', TITULO: 'GAYS' },
@@ -25,8 +27,7 @@ export class MainComponent implements OnInit{
     { SIGLA: '+', DESCRICAO: '+ é utilizado para incluir outros grupos e variações de gêneros e sexualidades, dado que a sigla está em constante mudança, como por exemplo a panssexualidade e a não', TITULO: 'DEMAIS IDENTIDADES E ORIENTAÇÕES' }
   ]
 
-  typeToSelect = {TEXTO: "TEXTO", VIDEO: "VIDEO"};
-  typeSelected = "TEXTO";
+  typeSelected = constants.TYPETOSELECT.TEXTO;
 
   constructor(public matDialog: MatDialog) { }
 
