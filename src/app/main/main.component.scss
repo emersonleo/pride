@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+.transviver-box{
+  width: 100%;
+  display: flow-root;
+  text-align-last: center;
+}
+.transviver-text{
+  float: right;
+  width: 100%;
+  padding: 10px;
+  & a{
+    color: #ced4da;
+  }
+  & p {
+    color: #ced4da;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 14px;
+    line-height: 0.5;
+  }
+}
 .main-content{
     text-align-last: center;
     color: #ced4da;
-    
+
     & h4{
       font-family: 'Teko', sans-serif;
       font-size: 40px;
@@ -17,7 +38,7 @@
         place-content: center;
 
     }
-    
+
     & .letter {
         font-family: 'Press Start 2P', cursive;
         display: inline-block;
@@ -29,43 +50,43 @@
             cursor: pointer;
         }
       }
-    
+
       .letter:nth-child(1) {
         color: #FF0018; /* Vermelho */
       }
-    
+
       .letter:nth-child(2) {
         color: #FF7F00; /* Laranja */
       }
-    
+
       .letter:nth-child(3) {
         color: #FFED00; /* Amarelo */
       }
-    
+
       .letter:nth-child(4) {
         color: #00FF00; /* Verde */
       }
-    
+
       .letter:nth-child(5) {
         color: #0000FF; /* Azul */
       }
-    
+
       .letter:nth-child(6) {
         color: #8B00FF; /* Roxo */
       }
-    
+
       .letter:nth-child(7) {
         color: #4B0082; /* Indigo */
       }
-    
+
       .letter:nth-child(8) {
         color: #00FFFF; /* Turquesa */
       }
-    
+
       .letter:nth-child(9) {
         color: #FF1493; /* Rosa */
       }
-    
+
       .letter:nth-child(10) {
         color: #FFFFFF; /* Branco */
       }

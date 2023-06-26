@@ -8,14 +8,17 @@ import { ModalInfoComponent } from './modal-info/modal-info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ButtonTypeComponent } from './button-type/button-type.component';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { ContentInfoComponent } from './content-info/content-info.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     ModalInfoComponent,
-    ButtonTypeComponent
+    ButtonTypeComponent,
+    ContentInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,7 @@ import { MatIconModule } from '@angular/material/icon'
     BrowserAnimationsModule,
     MatDialogModule,
     MatIconModule,
+    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

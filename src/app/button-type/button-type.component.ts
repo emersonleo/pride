@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button-type',
@@ -6,5 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button-type.component.scss']
 })
 export class ButtonTypeComponent {
-  @Input() text: string | undefined;
+  @Input() text: any;
+  @Output() selectedType = new EventEmitter();
+
+  selectType(value: string){
+    this.selectedType.emit(value);
+  }
 }

@@ -1,0 +1,31 @@
+<div *ngIf="type == 'TEXTO'" class="container-text">
+  <h3> Celebre a Diversidade na sua empresa! </h3>
+
+  <p>
+    A diversidade se tornou uma necessidade para o sucesso das empresas, uma vez que ao abraçar a diversidade as empresas podem criar ambientes mais inclusivos, inovadores e acolhedores para todos os colaboradores. E isso pode trazer vários benefícios:
+  </p>
+
+  <p>
+    <b> Criatividade e inovação: </b>A diversidade de perspectivas e experiências trazidas pela comunidade LGBTQIAPN+ impulsiona a criatividade e a inovação no ambiente de trabalho. solucionar problemas reais e complexos podem ser atingidos com mais facilidade ao abordarmos os problemas com pontos de vistas diferentes e por isso  inclusão dessas vozes amplia a gama de ideias e soluções, impulsionando o progresso da empresa.
+  </p>
+
+  <p>
+    <b>Atração e retenção de talentos: </b>Profissionais talentosos valorizam a diversidade e buscam empresas que sejam inclusivas. Ao se posicionar como um local de trabalho diversificado e acolhedor, as empresas podem atrair e reter os melhores talentos, criando equipes mais fortes e competentes.
+  </p>
+
+  <p>
+    <b> Melhor compreensão do cliente:  </b> A diversidade LGBTQIAPN+ no local de trabalho reflete a diversidade de clientes e consumidores. Ter colaboradores que compreendem e representam diferentes grupos leva a um melhor entendimento das necessidades do mercado e ajuda a desenvolver produtos e serviços mais relevantes.
+  </p>
+
+</div>
+
+<div *ngIf="type == 'VIDEO'">
+  <div class="carousel container-slide">
+    <ngx-slick-carousel class="carousel-items" [config]="carouselConfig">
+      <div ngxSlickItem *ngFor="let video of videos" class="slide">
+        <iframe width="90%" height="300" [src]="getVideoEmbedUrl(video)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</div>
+<!-- 280 157-->

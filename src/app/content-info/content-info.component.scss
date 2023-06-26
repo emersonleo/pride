@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+.container-slide{
+  padding-top: 20px;
+}
+
+.container-text{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  padding: 3% 7%;
+  & p{
+    text-align-last: left;
+    color: #ced4da;
+  }
+
+  & h3{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ced4da;
+  }
+
+}

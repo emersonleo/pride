@@ -1,31 +1,36 @@
+<div class="transviver-box">
+  <div class="transviver-text">
+    <p> Sabia que aqui em Recife temos uma ONG com ações focadas na comunidade LGBTQIA+ ?</p>
+    <p> Para conhecer o insta do Instituto Transviver é só clicar na casinha ;) </p>
+    <a href="https://www.instagram.com/transviver/" target="_blank"> <mat-icon> home </mat-icon> </a>
+  </div>
+</div>
 <div class="main-content">
+
+  <div class="padding-div">
     <div>
-        <div>
-            <p> Sabia que aqui em Recife temos uma ONG com ações focadas na comunidade LGBTQIA+ </p>
-            <a href="https://www.instagram.com/transviver/" target="_blank"> <mat-icon> share </mat-icon> </a>
-        </div>
+      <h4> ORGULHO </h4>
     </div>
-    <div class="padding-div">
-        <div>
-            <h4> ORGULHO </h4>
-        </div>
-        <div>
-            <div class="letters-content">
-                <h3 class="letter" (click)="openModal('L')" matTooltip="Info about the action">L</h3>
-                <h3 class="letter" (click)="openModal('G')" matTooltip="Info about the action">G</h3>
-                <h3 class="letter" (click)="openModal('B')" matTooltip="Info about the action">B</h3>
-                <h3 class="letter" (click)="openModal('T')"matTooltip="Info about the action">T</h3>
-                <h3 class="letter" (click)="openModal('Q')" matTooltip="Info about the action">Q</h3>
-                <h3 class="letter" (click)="openModal('I')" matTooltip="Info about the action">I</h3>
-                <h3 class="letter" (click)="openModal('A')" matTooltip="Info about the action">A</h3>
-                <h3 class="letter" (click)="openModal('P')" matTooltip="Info about the action">P</h3>
-                <h3 class="letter" (click)="openModal('N')" matTooltip="Info about the action">N</h3>
-                <h3 class="letter" (click)="openModal('+')" matTooltip="Info about the action">+</h3>
-              </div>
-        </div>
-        <div class="buttons-type">
-            <app-button-type [text]="'Texto'"> </app-button-type>
-            <app-button-type [text]="'Video'"> </app-button-type>
-        </div>
+    <div>
+      <div class="letters-content">
+        <h3 class="letter" (click)="openModal('L')">L</h3>
+        <h3 class="letter" (click)="openModal('G')">G</h3>
+        <h3 class="letter" (click)="openModal('B')">B</h3>
+        <h3 class="letter" (click)="openModal('T')">T</h3>
+        <h3 class="letter" (click)="openModal('Q')">Q</h3>
+        <h3 class="letter" (click)="openModal('I')">I</h3>
+        <h3 class="letter" (click)="openModal('A')">A</h3>
+        <h3 class="letter" (click)="openModal('P')">P</h3>
+        <h3 class="letter" (click)="openModal('N')">N</h3>
+        <h3 class="letter" (click)="openModal('+')">+</h3>
+      </div>
     </div>
+    <div class="buttons-type">
+      <app-button-type [text]="typeToSelect.TEXTO" (selectedType) = "selectedType(typeToSelect.TEXTO)"> </app-button-type>
+      <app-button-type [text]="typeToSelect.VIDEO" (selectedType) = "selectedType(typeToSelect.VIDEO)"> </app-button-type>
+    </div>
+    <div>
+      <app-content-info [type]="typeSelected"></app-content-info>
+    </div>
+  </div>
 </div>
